@@ -1,35 +1,93 @@
 'use client'
 
-import { fetcher } from '@/services/fetcher'
 import { HiOutlineNewspaper } from 'react-icons/hi'
-import useSWR from 'swr'
-
 import SectionHeading from '@/common/components/elements/SectionHeading'
 import SectionSubHeading from '@/common/components/elements/SectionSubHeading'
-import { DEVTO_BLOG_API } from '@/common/constant'
-import { BlogItem } from '@/common/types/blog'
-
-import LatestArticleCard from './LatestArticleCard'
-import LoadingLatestArticle from './LoadingLatestArticle'
-
+import Image from 'next/image'
+import Link from 'next/link'
 export default function LatestArticle() {
-  const { data, isLoading } = useSWR(DEVTO_BLOG_API, fetcher, {
-    revalidateOnMount: true
-  })
-  const articles: BlogItem[] = data?.slice(0, 4)
-
+ 
   return (
     <section>
       <div className="space-y-2">
-        <SectionHeading title="Latest Articles" icon={<HiOutlineNewspaper className="mr-1" />} />
+        <SectionHeading title="Latest Project" icon={<HiOutlineNewspaper className="mr-1" />} />
         <SectionSubHeading>
-          <p className="dark:text-neutral-400">Latest articles from dev.to</p>
+          <p className="dark:text-neutral-400">Latest portfolio project..</p>
         </SectionSubHeading>
       </div>
       <div className="flex flex-row h-40 overflow-y-hidden space-x-3 mt-6 overflow-x-scroll no-scrollbar">
-        {isLoading
-          ? [1, 2, 3, 4].map(item => <LoadingLatestArticle key={item} />)
-          : articles.map(article => <LatestArticleCard key={article.id} data={article} />)}
+      <Link
+      href="#"
+      className="min-w-[250px] h-max animate-slide-card flex flex-col space-y-1 hover:scale-95 duration-500">
+      <div className="w-full h-28 overflow-hidden rounded-md">
+        <Image
+          src="/git dan github.jpg"
+          alt="image project"
+          width={200}
+          height={200}
+          className="rounded-md w-full h-full object-cover"
+          priority
+        />
+      </div>
+      <p className=" text-sm text-neutral-800 dark:text-neutral-300">yyyyyy</p>
+      <span className=" text-[10px] text-neutral-600 dark:text-neutral-400">
+       202020
+      </span>
+    </Link>
+      <Link
+      href="#"
+      className="min-w-[250px] h-max animate-slide-card flex flex-col space-y-1 hover:scale-95 duration-500">
+      <div className="w-full h-28 overflow-hidden rounded-md">
+        <Image
+          src="/git dan github.jpg"
+          alt="image project"
+          width={200}
+          height={200}
+          className="rounded-md w-full h-full object-cover"
+          priority
+        />
+      </div>
+      <p className=" text-sm text-neutral-800 dark:text-neutral-300">yyyyyy</p>
+      <span className=" text-[10px] text-neutral-600 dark:text-neutral-400">
+       202020
+      </span>
+    </Link>
+      <Link
+      href="#"
+      className="min-w-[250px] h-max animate-slide-card flex flex-col space-y-1 hover:scale-95 duration-500">
+      <div className="w-full h-28 overflow-hidden rounded-md">
+        <Image
+          src="/git dan github.jpg"
+          alt="image project"
+          width={200}
+          height={200}
+          className="rounded-md w-full h-full object-cover"
+          priority
+        />
+      </div>
+      <p className=" text-sm text-neutral-800 dark:text-neutral-300">yyyyyy</p>
+      <span className=" text-[10px] text-neutral-600 dark:text-neutral-400">
+       202020
+      </span>
+    </Link>
+      <Link
+      href="#"
+      className="min-w-[250px] h-max animate-slide-card flex flex-col space-y-1 hover:scale-95 duration-500">
+      <div className="w-full h-28 overflow-hidden rounded-md">
+        <Image
+          src="/git dan github.jpg"
+          alt="image project"
+          width={200}
+          height={200}
+          className="rounded-md w-full h-full object-cover"
+          priority
+        />
+      </div>
+      <p className=" text-sm text-neutral-800 dark:text-neutral-300">yyyyyy</p>
+      <span className=" text-[10px] text-neutral-600 dark:text-neutral-400">
+       202020
+      </span>
+    </Link>
       </div>
     </section>
   )

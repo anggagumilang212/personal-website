@@ -61,7 +61,7 @@ export default function ProfileHeader({ expandMenu, imageSize }: ProfileHeaderPr
       />
       <div className="flex gap-2 items-center mt-1">
         <Link href="/" passHref>
-          <h2 className="flex-grow text-lg lg:text-xl font-sora font-medium">Bayu Setiawan</h2>
+          <h2 className="flex-grow text-lg lg:text-xl font-sora font-medium">Angga Gumilang</h2>
         </Link>
         <Tooltip title="Verified">
           <VerifiedIcon size={18} className="text-blue-400" />
@@ -72,7 +72,7 @@ export default function ProfileHeader({ expandMenu, imageSize }: ProfileHeaderPr
         target="_blank"
         className="hidden lg:flex text-sm font-sora text-neutral-600 hover:text-neutral-700 dark:text-neutral-500 dark:hover:text-neutral-400 transition-all duration-300"
       >
-        @codebayu
+        @lionel_zexx
       </Link>
     </div>
   )

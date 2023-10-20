@@ -21,13 +21,13 @@ export default function MeProfile() {
         </div>
       </div>
       <div className="flex gap-2 items-center mt-1 lg:mt-4">
-        <h2 className="flex-grow text-lg lg:text-xl font-sora font-medium">Bayu Setiawan</h2>
+        <h2 className="flex-grow text-lg lg:text-xl font-sora font-medium">Angga Gumilang</h2>
         <Tooltip title="Verified">
           <VerifiedIcon size={18} className="text-blue-400" />
         </Tooltip>
       </div>
       <p className="leading-[1.8] md:leading-loose text-sm text-center text-neutral-800 dark:text-neutral-300">
-        Software Engineer who focus on frontend development.
+        Software Engineer who focus on web development.
       </p>
     </div>
   )
