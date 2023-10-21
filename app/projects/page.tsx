@@ -17,8 +17,8 @@ export const metadata: Metadata = {
   }
 }
 
-const PAGE_TITLE = 'Projects'
-const PAGE_DESCRIPTION = 'Showcasing my passion for technology, design, and problem-solving through code.'
+const PAGE_TITLE = 'Portfolio Projects'
+const PAGE_DESCRIPTION = 'Projects that I have worked on with the team, whether as frontend, backend or full stack.'
 
 export default async function ProjectsPage() {
   const projects = await getProjets()
