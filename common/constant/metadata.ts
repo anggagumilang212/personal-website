@@ -11,6 +11,6 @@ export const METADATA = {
     siteName: 'Angga',
     locale: 'id-ID'
   },
-  exTitle: '| Angga',
+  exTitle: '| Angga Gumilang',
   profile: 'https://res.cloudinary.com/dnlrqdzbv/image/upload/v1697788294/Angga/angga2_uc3lod.jpg'
 }

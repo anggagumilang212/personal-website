@@ -34,10 +34,10 @@ export default function LatestArticle() {
       <div className="flex flex-wrap items-center gap-1">
               <Image src="/laravel2.png" alt="tech" width={12} height={12} />
               <Image src="/msql.png" alt="tech" width={12} height={12} />
-              <a href="#" className='flex ml-auto gap-1'>
+              <Link href="#" className='flex ml-auto gap-1'>
                 <LinkIcon size={10} />
                 <h1 className='text-[10px] -mt-[1px] text-neutral-600 dark:text-neutral-400'>Live Demo</h1>
-              </a>
+              </Link>
             </div>
     </Link>
       <Link
@@ -57,10 +57,10 @@ export default function LatestArticle() {
       <div className="flex flex-wrap items-center gap-1">
               <Image src="/laravel2.png" alt="tech" width={12} height={12} />
               <Image src="/msql.png" alt="tech" width={12} height={12} />
-              <a href="#" className='flex ml-auto gap-1'>
+              <Link href="#" className='flex ml-auto gap-1'>
                 <LinkIcon size={10} />
                 <h1 className='text-[10px] -mt-[1px] text-neutral-600 dark:text-neutral-400'>Live Demo</h1>
-              </a>
+              </Link>
             </div>
     </Link>
       <Link
@@ -80,10 +80,10 @@ export default function LatestArticle() {
       <div className="flex flex-wrap items-center gap-1">
               <Image src="/laravel2.png" alt="tech" width={12} height={12} />
               <Image src="/msql.png" alt="tech" width={12} height={12} />
-              <a href="#" className='flex ml-auto gap-1'>
+              <Link href="#" className='flex ml-auto gap-1'>
                 <LinkIcon size={10} />
                 <h1 className='text-[10px] -mt-[1px] text-neutral-600 dark:text-neutral-400'>Live Demo</h1>
-              </a>
+              </Link>
             </div>
     </Link>
       <Link
@@ -103,10 +103,10 @@ export default function LatestArticle() {
       <div className="flex flex-wrap items-center gap-1">
               <Image src="/laravel2.png" alt="tech" width={12} height={12} />
               <Image src="/msql.png" alt="tech" width={12} height={12} />
-              <a href="#" className='flex ml-auto gap-1'>
+              <Link href="#" className='flex ml-auto gap-1'>
                 <LinkIcon size={10} />
                 <h1 className='text-[10px] -mt-[1px] text-neutral-600 dark:text-neutral-400'>Live Demo</h1>
-              </a>
+              </Link>
             </div>
     </Link>
       </div>
