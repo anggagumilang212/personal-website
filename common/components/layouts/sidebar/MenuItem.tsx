@@ -17,7 +17,7 @@ export default function MenuItem({ title, href, icon, onClick, className = '', c
   const isExternalUrl = href?.includes('http')
   const isHashLink = href === '#'
   const pathname = usePathname()
-  const url = new URL(href, 'https://anggapersonalweb.vercel.app')
+  const url = new URL(href, 'https://angga-personal-web.vercel.app')
 
   const activeClasses = `flex items-center gap-2 py-2 px-4 text-neutral-700 dark:text-neutral-400 hover:text-neutral-900 hover:dark:text-neutral-300 rounded-lg ${
     pathname === url.pathname
