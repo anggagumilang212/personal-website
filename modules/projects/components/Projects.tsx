@@ -1,6 +1,5 @@
-'use client'
 
-
+import Link from 'next/link'
 import Image from 'next/image';
 import { FiExternalLink as LinkIcon } from 'react-icons/fi'
 export default function Projects() {
@@ -18,10 +17,10 @@ export default function Projects() {
             <div className="flex flex-wrap items-center gap-2">
               <Image src="/laravel2.png" alt="tech" width={25} height={25} />
               <Image src="/msql.png" alt="tech" width={25} height={25} />
-              <a href="#" className='flex ml-auto gap-1'>
+              <Link href="#" className='flex ml-auto gap-1'>
                 <LinkIcon size={22} />
                 <h1>Live Demo</h1>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -35,10 +34,10 @@ export default function Projects() {
             <div className="flex flex-wrap items-center gap-2">
               <Image src="/laravel2.png" alt="tech" width={25} height={25} />
               <Image src="/msql.png" alt="tech" width={25} height={25} />
-              <a href="#" className='flex ml-auto gap-1'>
+              <Link href="#" className='flex ml-auto gap-1'>
                 <LinkIcon size={22} />
                 <h1>Live Demo</h1>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

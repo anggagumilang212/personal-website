@@ -6,14 +6,14 @@ import { METADATA } from '@/common/constant/metadata'
 
 import Projects from '@/modules/projects'
 
-export const metadata: Metadata = {
-  title: `Projects ${METADATA.exTitle}`,
-  description: 'Software Engineer portfolio ideas',
-  keywords: 'portfolio frontend developer',
-  alternates: {
-    canonical: `${process.env.DOMAIN}/projects`
-  }
-}
+// export const metadata: Metadata = {
+//   title: `Projects ${METADATA.exTitle}`,
+//   description: 'Software Engineer portfolio ideas',
+//   keywords: 'portfolio frontend developer',
+//   alternates: {
+//     canonical: `${process.env.DOMAIN}/projects`
+//   }
+// }
 
 const PAGE_TITLE = 'Portfolio Projects'
 const PAGE_DESCRIPTION = 'Projects that I have worked on with the team, whether as frontend, backend or full stack.'
