@@ -26,7 +26,7 @@ export default async function ProjectsPage() {
     <>
       <Container data-aos="fade-up">
         <PageHeading title={PAGE_TITLE} description={PAGE_DESCRIPTION} />
-        <Projects projects={projects} />
+        <Projects/>
       </Container>
     </>
   )

@@ -5,6 +5,7 @@ import SectionHeading from '@/common/components/elements/SectionHeading'
 import SectionSubHeading from '@/common/components/elements/SectionSubHeading'
 import Image from 'next/image'
 import Link from 'next/link'
+import { FiExternalLink as LinkIcon } from 'react-icons/fi'
 export default function LatestArticle() {
  
   return (
@@ -29,10 +30,15 @@ export default function LatestArticle() {
           priority
         />
       </div>
-      <p className=" text-sm text-neutral-800 dark:text-neutral-300">yyyyyy</p>
-      <span className=" text-[10px] text-neutral-600 dark:text-neutral-400">
-       202020
-      </span>
+      <p className="text-sm text-neutral-800 dark:text-neutral-300">yyyyyy</p>
+      <div className="flex flex-wrap items-center gap-1">
+              <Image src="/laravel2.png" alt="tech" width={12} height={12} />
+              <Image src="/msql.png" alt="tech" width={12} height={12} />
+              <a href="#" className='flex ml-auto gap-1'>
+                <LinkIcon size={10} />
+                <h1 className='text-[10px] -mt-[1px] text-neutral-600 dark:text-neutral-400'>Live Demo</h1>
+              </a>
+            </div>
     </Link>
       <Link
       href="#"
@@ -48,9 +54,14 @@ export default function LatestArticle() {
         />
       </div>
       <p className=" text-sm text-neutral-800 dark:text-neutral-300">yyyyyy</p>
-      <span className=" text-[10px] text-neutral-600 dark:text-neutral-400">
-       202020
-      </span>
+      <div className="flex flex-wrap items-center gap-1">
+              <Image src="/laravel2.png" alt="tech" width={12} height={12} />
+              <Image src="/msql.png" alt="tech" width={12} height={12} />
+              <a href="#" className='flex ml-auto gap-1'>
+                <LinkIcon size={10} />
+                <h1 className='text-[10px] -mt-[1px] text-neutral-600 dark:text-neutral-400'>Live Demo</h1>
+              </a>
+            </div>
     </Link>
       <Link
       href="#"
@@ -66,9 +77,14 @@ export default function LatestArticle() {
         />
       </div>
       <p className=" text-sm text-neutral-800 dark:text-neutral-300">yyyyyy</p>
-      <span className=" text-[10px] text-neutral-600 dark:text-neutral-400">
-       202020
-      </span>
+      <div className="flex flex-wrap items-center gap-1">
+              <Image src="/laravel2.png" alt="tech" width={12} height={12} />
+              <Image src="/msql.png" alt="tech" width={12} height={12} />
+              <a href="#" className='flex ml-auto gap-1'>
+                <LinkIcon size={10} />
+                <h1 className='text-[10px] -mt-[1px] text-neutral-600 dark:text-neutral-400'>Live Demo</h1>
+              </a>
+            </div>
     </Link>
       <Link
       href="#"
@@ -84,9 +100,14 @@ export default function LatestArticle() {
         />
       </div>
       <p className=" text-sm text-neutral-800 dark:text-neutral-300">yyyyyy</p>
-      <span className=" text-[10px] text-neutral-600 dark:text-neutral-400">
-       202020
-      </span>
+      <div className="flex flex-wrap items-center gap-1">
+              <Image src="/laravel2.png" alt="tech" width={12} height={12} />
+              <Image src="/msql.png" alt="tech" width={12} height={12} />
+              <a href="#" className='flex ml-auto gap-1'>
+                <LinkIcon size={10} />
+                <h1 className='text-[10px] -mt-[1px] text-neutral-600 dark:text-neutral-400'>Live Demo</h1>
+              </a>
+            </div>
     </Link>
       </div>
     </section>

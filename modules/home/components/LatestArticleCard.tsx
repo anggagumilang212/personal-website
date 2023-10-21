@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-
 import React from 'react'
 import { BlogItem } from '@/common/types/blog'
 
@@ -28,6 +27,7 @@ export default function LatestArticleCard({ data }: LatestArticleCardProps) {
       <span className=" text-[10px] text-neutral-600 dark:text-neutral-400">
        202020
       </span>
+     
     </Link>
    
   );
