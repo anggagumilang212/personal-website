@@ -11,7 +11,8 @@
     "format": "prettier --write .",
     "format:check": "prettier -c .",
     "test": "vitest",
-    "coverage": "vitest --coverage"
+    "coverage": "vitest --coverage",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@bradgarropy/next-google-analytics": "^1.0.2",
