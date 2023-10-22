@@ -25,6 +25,7 @@ import {
   SiTailwindcss,
   SiTypescript,
   SiVite,
+  SiGit,
 
 } from 'react-icons/si'
 
@@ -47,5 +48,6 @@ export const STACKS: stacksProps = {
   HTML: <SiHtml5 size={iconSize} className="text-orange-500" />,
   CSS: <SiCss3 size={iconSize} className="text-blue-500" />,
   Github: <SiGithub size={iconSize} />,
+  Git: <SiGit size={iconSize} className="text-orange-500" />,
  
 }
