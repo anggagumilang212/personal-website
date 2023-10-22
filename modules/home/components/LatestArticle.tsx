@@ -21,8 +21,8 @@ export default function LatestArticle() {
       className="min-w-[250px] h-max animate-slide-card flex flex-col space-y-1 hover:scale-95 duration-500">
       <div className="w-full h-28 overflow-hidden rounded-md">
         <Image
-          src="/git dan github.jpg"
-          alt="image project"
+        src="/visitcirebon.png" 
+        alt="visit"
           width={200}
           height={200}
           className="rounded-md w-full h-full object-cover"

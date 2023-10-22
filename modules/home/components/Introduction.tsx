@@ -11,7 +11,7 @@ export default function Introduction() {
 
       <div className="space-y-4">
         <ul className="flex flex-col lg:flex-row gap-1 lg:gap-8 ml-5 list-disc text-neutral-700 dark:text-neutral-400">
-          <li>Software Engineer</li>
+          <li>Web Developer</li>
           <li>
             Based in Cirebon <span className="ml-1">Indonesia 🇮🇩</span>
           </li>
