@@ -16,8 +16,8 @@ export default function LatestArticle() {
         </SectionSubHeading>
       </div>
       <div className="flex flex-row h-40 overflow-y-hidden space-x-3 mt-6 overflow-x-scroll no-scrollbar">
-      <Link
-      href="#"
+      <div
+      
       className="min-w-[250px] h-max animate-slide-card flex flex-col space-y-1 hover:scale-95 duration-500">
       <div className="w-full h-28 overflow-hidden rounded-md">
         <Image
@@ -31,16 +31,20 @@ export default function LatestArticle() {
       </div>
       <p className="text-sm text-neutral-800 dark:text-neutral-300">Visit Cirebon</p>
       <div className="flex flex-wrap items-center gap-1">
-              <Image src="/laravel2.png" alt="tech" width={12} height={12} />
-              <Image src="/msql.png" alt="tech" width={12} height={12} />
-              <div className='flex ml-auto gap-1'>
+              <Image src="/tech/laravel2.png" alt="tech" width={12} height={12} />
+              <Image src="/tech/msql.png" alt="tech" width={12} height={12} />
+              <Image src="/tech/html.png" alt="tech" width={12} height={12} />
+              <Image src="/tech/bootsrap.png" alt="tech" width={12} height={12} />
+              <Image src="/tech/css.png" alt="tech" width={12} height={12} />
+              <Image src="/tech/js.png" alt="tech" width={12} height={12} />
+              <Link href={"https://www.visitcirebon.id/layanan-produk"} target='_blank' className='flex ml-auto gap-1'>
                 <LinkIcon size={10} />
                 <h1 className='text-[10px] -mt-[1px] text-neutral-600 dark:text-neutral-400'>Live Demo</h1>
-              </div>
+              </Link>
             </div>
-    </Link>
-      <Link
-      href="#"
+    </div>
+      <div
+     
       className="min-w-[250px] h-max animate-slide-card flex flex-col space-y-1 hover:scale-95 duration-500">
       <div className="w-full h-28 overflow-hidden rounded-md">
         <Image
@@ -52,18 +56,21 @@ export default function LatestArticle() {
           priority
         />
       </div>
-      <p className=" text-sm text-neutral-800 dark:text-neutral-300">Dispora</p>
+      <p className="text-sm text-neutral-800 dark:text-neutral-300">Dispora</p>
       <div className="flex flex-wrap items-center gap-1">
-              <Image src="/laravel2.png" alt="tech" width={12} height={12} />
-              <Image src="/msql.png" alt="tech" width={12} height={12} />
-              <div className='flex ml-auto gap-1'>
+              <Image src="/tech/laravel2.png" alt="tech" width={12} height={12} />
+              <Image src="/tech/msql.png" alt="tech" width={12} height={12} />
+              <Image src="/tech/html.png" alt="tech" width={12} height={12} />
+              <Image src="/tech/bootsrap.png" alt="tech" width={12} height={12} />
+              <Image src="/tech/css.png" alt="tech" width={12} height={12} />
+              <Image src="/tech/js.png" alt="tech" width={12} height={12} />
+              <Link href={"https://diasporacirebonkab.online"} target='_blank' className='flex ml-auto gap-1'>
                 <LinkIcon size={10} />
                 <h1 className='text-[10px] -mt-[1px] text-neutral-600 dark:text-neutral-400'>Live Demo</h1>
-              </div>
+              </Link>
             </div>
-    </Link>
-      <Link
-      href="#"
+    </div>
+      <div
       className="min-w-[250px] h-max animate-slide-card flex flex-col space-y-1 hover:scale-95 duration-500">
       <div className="w-full h-28 overflow-hidden rounded-md">
         <Image
@@ -77,16 +84,19 @@ export default function LatestArticle() {
       </div>
       <p className=" text-sm text-neutral-800 dark:text-neutral-300">Smart Keraton</p>
       <div className="flex flex-wrap items-center gap-1">
-              <Image src="/laravel2.png" alt="tech" width={12} height={12} />
-              <Image src="/msql.png" alt="tech" width={12} height={12} />
-              <div className='flex ml-auto gap-1'>
+              <Image src="/tech/laravel2.png" alt="tech" width={12} height={12} />
+              <Image src="/tech/msql.png" alt="tech" width={12} height={12} />
+              <Image src="/tech/html.png" alt="tech" width={12} height={12} />
+              <Image src="/tech/bootsrap.png" alt="tech" width={12} height={12} />
+              <Image src="/tech/css.png" alt="tech" width={12} height={12} />
+              <Image src="/tech/js.png" alt="tech" width={12} height={12} />
+              <Link href={'https://smartkeraton.online/beritaBudaya'} target='_blank' className='flex ml-auto gap-1'>
                 <LinkIcon size={10} />
                 <h1 className='text-[10px] -mt-[1px] text-neutral-600 dark:text-neutral-400'>Live Demo</h1>
-              </div>
+              </Link>
             </div>
-    </Link>
-      <Link
-      href="#"
+    </div>
+      <div
       className="min-w-[250px] h-max animate-slide-card flex flex-col space-y-1 hover:scale-95 duration-500">
       <div className="w-full h-28 overflow-hidden rounded-md">
         <Image
@@ -100,14 +110,15 @@ export default function LatestArticle() {
       </div>
       <p className=" text-sm text-neutral-800 dark:text-neutral-300">Cs Catering</p>
       <div className="flex flex-wrap items-center gap-1">
-              <Image src="/laravel2.png" alt="tech" width={12} height={12} />
-              <Image src="/msql.png" alt="tech" width={12} height={12} />
-              <div className='flex ml-auto gap-1'>
+              <Image src="/tech/tailwind.png" alt="tech" width={12} height={12} />
+              <Image src="/tech/html.png" alt="tech" width={12} height={12} />
+              <Image src="/tech/js.png" alt="tech" width={12} height={12} />
+              <Link href={'https://cscatering.vercel.app'} target='_blank' className='flex ml-auto gap-1'>
                 <LinkIcon size={10} />
                 <h1 className='text-[10px] -mt-[1px] text-neutral-600 dark:text-neutral-400'>Live Demo</h1>
-              </div>
+              </Link>
             </div>
-    </Link>
+    </div>
       </div>
     </section>
   )

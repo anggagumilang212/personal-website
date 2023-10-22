@@ -15,9 +15,13 @@ export default function Projects() {
             <h1 className="mb-3 text-lg font-medium text-gray-900 dark:text-white title-font">Visit Cirebon ID</h1>
             <p className="mb-3 leading-relaxed">Visit cirebon adalah website yang bertujuan untuk mengenalkan kota cirebon yang mempunyai banyak kuliner,wisata,oleh-oleh dan lainnya.</p>
             <div className="flex flex-wrap items-center gap-2">
-              <Image src="/laravel2.png" alt="tech" width={25} height={25} />
-              <Image src="/msql.png" alt="tech" width={25} height={25} />
-              <Link href="#" className='flex ml-auto gap-1'>
+              <Image src="/tech/laravel2.png" alt="tech" width={25} height={25} />
+              <Image src="/tech/msql.png" alt="tech" width={25} height={25} />
+              <Image src="/tech/html.png" alt="tech" width={25} height={25} />
+              <Image src="/tech/bootsrap.png" alt="tech" width={25} height={25} />
+              <Image src="/tech/css.png" alt="tech" width={25} height={25} />
+              <Image src="/tech/js.png" alt="tech" width={25} height={25} />
+              <Link href={"https://www.visitcirebon.id/layanan-produk"} target='_blank' className='flex ml-auto gap-1'>
                 <LinkIcon size={22} />
                 <h1>Live Demo</h1>
               </Link>
@@ -32,9 +36,13 @@ export default function Projects() {
             <h1 className="mb-3 text-lg font-medium text-gray-900 dark:text-white title-font">Dispora Cirebon</h1>
             <p className="mb-3 leading-relaxed">Website dispora cirebon yang bertujuan untuk mengelola sistem pemuda dan olahraga di kabupaten cirebon, semua konten di dalamnya di ataur lewat menejemen admin.</p>
             <div className="flex flex-wrap items-center gap-2">
-              <Image src="/laravel2.png" alt="tech" width={25} height={25} />
-              <Image src="/msql.png" alt="tech" width={25} height={25} />
-              <Link href="#" className='flex ml-auto gap-1'>
+              <Image src="/tech/laravel2.png" alt="tech" width={25} height={25} />
+              <Image src="/tech/msql.png" alt="tech" width={25} height={25} />
+              <Image src="/tech/html.png" alt="tech" width={25} height={25} />
+              <Image src="/tech/bootsrap.png" alt="tech" width={25} height={25} />
+              <Image src="/tech/css.png" alt="tech" width={25} height={25} />
+              <Image src="/tech/js.png" alt="tech" width={25} height={25} />
+              <Link href={"https://diasporacirebonkab.online"} target='_blank' className='flex ml-auto gap-1'>
                 <LinkIcon size={22} />
                 <h1>Live Demo</h1>
               </Link>
@@ -49,9 +57,13 @@ export default function Projects() {
             <h1 className="mb-3 text-lg font-medium text-gray-900 dark:text-white title-font">Smart Keraton Kacirebonan</h1>
             <p className="mb-3 leading-relaxed">Website resmi keraton Kacirebonan, teknologi yang di gunakan css,bootsrap Mysql dan laravel</p>
             <div className="flex flex-wrap items-center gap-2">
-              <Image src="/laravel2.png" alt="tech" width={25} height={25} />
-              <Image src="/msql.png" alt="tech" width={25} height={25} />
-              <Link href="#" className='flex ml-auto gap-1'>
+              <Image src="/tech/laravel2.png" alt="tech" width={25} height={25} />
+              <Image src="/tech/msql.png" alt="tech" width={25} height={25} />
+              <Image src="/tech/html.png" alt="tech" width={25} height={25} />
+              <Image src="/tech/bootsrap.png" alt="tech" width={25} height={25} />
+              <Image src="/tech/css.png" alt="tech" width={25} height={25} />
+              <Image src="/tech/js.png" alt="tech" width={25} height={25} />
+              <Link href={'https://smartkeraton.online/beritaBudaya'} target='_blank' className='flex ml-auto gap-1'>
                 <LinkIcon size={22} />
                 <h1>Live Demo</h1>
               </Link>
@@ -66,9 +78,10 @@ export default function Projects() {
             <h1 className="mb-3 text-lg font-medium text-gray-900 dark:text-white title-font">Cs Catering</h1>
             <p className="mb-3 leading-relaxed">Website yang dapat terima pesanan catering melalui online.</p>
             <div className="flex flex-wrap items-center gap-2">
-              <Image src="/laravel2.png" alt="tech" width={25} height={25} />
-              <Image src="/msql.png" alt="tech" width={25} height={25} />
-              <Link href="#" className='flex ml-auto gap-1'>
+            <Image src="/tech/tailwind.png" alt="tech" width={25} height={25} />
+              <Image src="/tech/html.png" alt="tech" width={25} height={25} />
+              <Image src="/tech/js.png" alt="tech" width={25} height={25} />
+              <Link href={'https://cscatering.vercel.app'} target='_blank' className='flex ml-auto gap-1'>
                 <LinkIcon size={22} />
                 <h1>Live Demo</h1>
               </Link>

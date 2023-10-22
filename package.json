@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@bradgarropy/next-google-analytics": "^1.0.2",
+    "@formspree/react": "^2.5.1",
     "@hello-pangea/dnd": "^16.3.0",
     "@prisma/client": "^5.2.0",
     "@types/node": "^20.5.3",
@@ -34,6 +35,7 @@
     "next": "13.4.19",
     "next-themes": "^0.2.1",
     "nextjs-toploader": "^1.4.2",
+    "nodemailer": "^6.9.7",
     "postcss": "8.4.28",
     "react": "18.2.0",
     "react-circular-progressbar": "^2.1.0",
