@@ -49,5 +49,6 @@ export const STACKS: stacksProps = {
   CSS: <SiCss3 size={iconSize} className="text-blue-500" />,
   Github: <SiGithub size={iconSize} />,
   Git: <SiGit size={iconSize} className="text-orange-500" />,
+  Nextjs: <SiNextdotjs size={iconSize} className="text-slate-800" />,
  
 }

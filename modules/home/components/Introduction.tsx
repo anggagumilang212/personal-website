@@ -11,13 +11,13 @@ export default function Introduction() {
 
       <div className="space-y-4">
         <ul className="flex flex-col lg:flex-row gap-1 lg:gap-8 ml-5 list-disc text-neutral-700 dark:text-neutral-400">
-          <li>Web Developer</li>
+          <li>Software Engineer</li>
           <li>
             Based in Cirebon <span className="ml-1">Indonesia 🇮🇩</span>
           </li>
         </ul>
         <p className="leading-[1.8] md:leading-loose text-neutral-800 dark:text-neutral-300">
-        a full stack developer with a passion for creating modern,
+        A full stack web developer with a passion for creating modern,
                     dynamic and static websites, creating technological
                     solutions that are innovative and useful for many people.
         </p>

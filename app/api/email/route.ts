@@ -7,11 +7,11 @@ interface IEmailForm {
 }
 
 export const POST = async (request: Request) => {
-  const EMAIL_SERVICE_SECRET = process.env.EMAIL_SERVICE_SECRET || ''
+  const NEXT_PUBLIC_EMAIL_SERVICE_API = process.env.NEXT_PUBLIC_EMAIL_SERVICE_API || ''
   const body: IEmailForm = await request.json()
 
   const newFormBody = new FormData()
-  newFormBody.append('access_key', EMAIL_SERVICE_SECRET)
+  newFormBody.append('access_key', NEXT_PUBLIC_EMAIL_SERVICE_API)
 
   for (const key in body) {
     newFormBody.append(key, body[key])

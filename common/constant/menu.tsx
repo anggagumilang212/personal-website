@@ -64,22 +64,22 @@ export const MENU_ITEMS: MenuItemProps[] = [
   //   isExternal: false,
   //   eventName: 'Pages: Roadmap'
   // },
-  {
-    title: 'Task Board',
-    href: '/board',
-    icon: <LuTrello size={iconSize} />,
-    isShow: true,
-    isExternal: false,
-    eventName: 'Pages: Task Board'
-  },
   // {
-  //   title: 'About',
-  //   href: '/about',
-  //   icon: <ProfileIcon size={iconSize} />,
+  //   title: 'Task Board',
+  //   href: '/board',
+  //   icon: <LuTrello size={iconSize} />,
   //   isShow: true,
   //   isExternal: false,
-  //   eventName: 'Pages: About'
+  //   eventName: 'Pages: Task Board'
   // },
+  {
+    title: 'About',
+    href: '/about',
+    icon: <ProfileIcon size={iconSize} />,
+    isShow: true,
+    isExternal: false,
+    eventName: 'Pages: About'
+  },
   {
     title: 'Contact',
     href: '/contact',
