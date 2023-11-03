@@ -8,14 +8,14 @@ import About from '@/modules/about'
 
 export const metadata: Metadata = {
   title: `About ${METADATA.exTitle}`,
-  description: `A short story of ${METADATA.creator}`,
+  description: `About me ${METADATA.creator}`,
   alternates: {
     canonical: `${process.env.DOMAIN}/about`
   }
 }
 
 const PAGE_TITLE = 'About'
-const PAGE_DESCRIPTION = 'A short story of me'
+const PAGE_DESCRIPTION = 'About me'
 
 export default function AboutPage() {
   return (

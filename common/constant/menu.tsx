@@ -88,6 +88,14 @@ export const MENU_ITEMS: MenuItemProps[] = [
     isExternal: false,
     eventName: 'Pages: Contact'
   },
+  {
+    title: 'Me',
+    href: '/me',
+    icon: <DashboardIcon size={iconSize} />,
+    isShow: true,
+    isExternal: false,
+    eventName: 'Pages: Me'
+  }
   // {
   //   title: 'Dashboard',
   //   href: '/dashboard',

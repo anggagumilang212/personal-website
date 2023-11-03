@@ -4,7 +4,7 @@ export const PLACEHOLDER_URL ='https://res.cloudinary.com/dnlrqdzbv/image/upload
 export const DEVTO_PROFILE = 'https://www.instagram.com/lionel_zexx/'
 export const PAGESPEED_URL = 'https://pagespeed.web.dev/'
 export const PAGESPEED_CATEGORIES = '&category=accessibility&category=performance&category=best-practices&category=seo'
-export const PROFILE_URL ='https://res.cloudinary.com/dnlrqdzbv/image/upload/v1697788294/Angga/angga2_uc3lod.jpg'
+export const PROFILE_URL ='https://res.cloudinary.com/dnlrqdzbv/image/upload/v1699025031/Angga/js5miewtffs7yhs9szp6.png'
 export const DEVTO_BLOG_API = 'https://dev.to/api/articles?username=anggagumilang212'
 export const BACKDROP_IMAGE ='https://res.cloudinary.com/dnlrqdzbv/image/upload/v1698930063/Angga/onnkrm731mmpgbvecidl.png'
 export const RESUME_URL = 'https://res.cloudinary.com/dnlrqdzbv/image/upload/v1698934164/Angga/resume/bzkwkbbuszpzkk3bjpl0.png'
