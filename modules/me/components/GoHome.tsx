@@ -8,7 +8,7 @@ export default function GoHome() {
   return (
     <div
       className="flex flex-col space-y-3 md:space-y-0 md:space-x-3 px-6 md:flex-row w-full justify-center mt-8"
-      data-aos="zoom-in-down"
+    
     >
       <Link
         href="/"

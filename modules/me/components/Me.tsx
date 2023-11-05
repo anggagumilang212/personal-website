@@ -14,7 +14,7 @@ export default function MeSection() {
       <MeProfile />
       <CurrentlyWorking />
       <SocialMedia items={filteredSocialMedia} isMePage />
-      <GoHome />
+      <GoHome  />
     </>
   )
 }
