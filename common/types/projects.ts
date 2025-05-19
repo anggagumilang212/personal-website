@@ -11,11 +11,6 @@ export interface IProjectItem {
   is_show: boolean
   is_featured: boolean
   updated_at: Date
-  judul: string
-  deskripsi: string
-  image_url: string
-  tech: string[]
-  url: string
 }
 
 export interface IProjectsItemProps {
