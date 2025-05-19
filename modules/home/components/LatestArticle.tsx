@@ -14,7 +14,7 @@ export default function LatestArticle() {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const res = await fetch('http://localhost:8000/api/projects') // Sesuaikan dengan base URL-mu
+        const res = await fetch('https://api.anggagumilang.my.id/api/projects') // Sesuaikan dengan base URL-mu
         const data = await res.json()
         setProjects(data.data)
       } catch (error) {
