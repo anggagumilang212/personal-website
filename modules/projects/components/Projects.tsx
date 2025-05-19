@@ -4,9 +4,16 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { FiExternalLink as LinkIcon } from 'react-icons/fi';
-
+interface Project {
+  id: number
+  judul: string
+  deskripsi: string
+  url: string
+  image_url: string
+  tech: string[]
+}
 export default function Projects() {
-  const [projects, setProjects] = useState([]);
+  const [projects, setProjects] = useState<Project[]>([]);
 
   useEffect(() => {
     const fetchProjects = async () => {

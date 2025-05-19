@@ -7,9 +7,16 @@ import SectionSubHeading from '@/common/components/elements/SectionSubHeading'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FiExternalLink as LinkIcon } from 'react-icons/fi'
-
+interface Project {
+  id: number
+  judul: string
+  deskripsi: string
+  url: string
+  image_url: string
+  tech: string[]
+}
 export default function LatestArticle() {
-  const [projects, setProjects] = useState([])
+  const [projects, setProjects] = useState<Project[]>([])
 
   useEffect(() => {
     const fetchProjects = async () => {
