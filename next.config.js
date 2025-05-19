@@ -1,16 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['picsum.photos', 'res.cloudinary.com']
+    domains: ['picsum.photos', 'res.cloudinary.com', 'localhost', 'anggagumilang.my.id']
   },
   async rewrites() {
     return [
       {
         source: '/api/:path*',
-        destination: 'https://www.anggapersonalweb.vercel.app/api/email', // Sesuaikan dengan path Anda
-      },
+        destination: 'https://www.anggagumilang.my.id/api/email' // Sesuaikan dengan path Anda
+      }
     ]
-  },
+  }
 }
 
 module.exports = nextConfig
