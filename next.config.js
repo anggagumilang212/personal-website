@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['picsum.photos', 'res.cloudinary.com', 'localhost', 'anggagumilang.my.id']
+    domains: ['picsum.photos', 'res.cloudinary.com', 'localhost', 'api.anggagumilang.my.id']
   },
   async rewrites() {
     return [

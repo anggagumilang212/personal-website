@@ -11,7 +11,7 @@ import ThemeProviderContext from '../stores/theme'
 import './globals.css'
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NODE_ENV === 'development' ? 'https://anggapersonalweb.vercel.app' : process.env.DOMAIN || ''),
+  metadataBase: new URL(process.env.NODE_ENV === 'development' ? 'https://anggagumilang.my.id' : process.env.DOMAIN || ''),
   description: METADATA.description,
   keywords: METADATA.keyword,
   creator: METADATA.creator,
