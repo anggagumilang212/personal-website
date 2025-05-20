@@ -9,4 +9,4 @@ export const DEVTO_BLOG_API = 'https://dev.to/api/articles?username=anggagumilan
 export const BACKDROP_IMAGE =
   'https://res.cloudinary.com/dnlrqdzbv/image/upload/v1698930063/Angga/onnkrm731mmpgbvecidl.png'
 export const RESUME_URL =
-  'https://res.cloudinary.com/dnlrqdzbv/image/upload/v1700034646/Angga/resume/hrki9ttvtfh8qdq1scvl.png'
+  'https://res.cloudinary.com/dnlrqdzbv/image/upload/v1747742438/Angga/resume/fhy4dfeilhbp3osvd2yz.jpg'

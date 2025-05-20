@@ -10,17 +10,17 @@ export const CAREERS = [
     end_date: '2025-05',
     link: 'https://reang.net'
   },
-  {
-    position: 'Full Stack Developer',
-    company: 'PT.Potensi Inti Persada',
-    logo: 'https://res.cloudinary.com/dnlrqdzbv/image/upload/v1747724196/Angga/cvr1gry00ic8ujihsm2u.jpg',
-    location: 'Cirebon',
-    location_type: 'Freelance',
-    type: 'Freelance',
-    start_date: '2023-09',
-    end_date: '2025-05',
-    link: 'https://potensiinti.com'
-  },
+  // {
+  //   position: 'Full Stack Developer',
+  //   company: 'PT.Potensi Inti Persada',
+  //   logo: 'https://res.cloudinary.com/dnlrqdzbv/image/upload/v1747724196/Angga/cvr1gry00ic8ujihsm2u.jpg',
+  //   location: 'Cirebon',
+  //   location_type: 'Freelance',
+  //   type: 'Freelance',
+  //   start_date: '2023-09',
+  //   end_date: '2025-05',
+  //   link: 'https://potensiinti.com'
+  // },
   {
     position: 'Full Stack Developer',
     company: 'PT. Grage Media Technology',
@@ -33,7 +33,7 @@ export const CAREERS = [
     link: 'https://gramedtech.com'
   },
   {
-    position: 'Full Stack Developer',
+    position: 'Junior Web Developer',
     company: 'Java Genius All Technology',
     logo: 'https://res.cloudinary.com/dnlrqdzbv/image/upload/v1697797485/Angga/jagat_dxupo5.png',
     location: 'Cirebon',

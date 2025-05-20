@@ -13,6 +13,7 @@ import {
   SiTailwindcss,
   SiVite,
   SiGit,
+  SiProxmox,
 
 } from 'react-icons/si'
 
@@ -29,7 +30,8 @@ export const STACKS: stacksProps = {
   TailwindCSS: <SiTailwindcss size={iconSize} className="text-cyan-300" />,
   Bootstrap: <BsFillBootstrapFill size={iconSize} className="text-purple-500" />,
   Vite: <SiVite size={iconSize} className="text-yellow-500" />,
-  PostgreSql: <BiLogoPostgresql size={iconSize} className="text-blue-400" />,
+  // PostgreSql: <BiLogoPostgresql size={iconSize} className="text-blue-400" />,
+  Proxmox: <SiProxmox size={iconSize} className="text-red-700" />,
   Laravel: <SiLaravel size={iconSize} className="text-red-500" />,
   Mysql: <SiMysql size={iconSize} className="text-yellow-500" />,
   HTML: <SiHtml5 size={iconSize} className="text-orange-500" />,
@@ -37,5 +39,4 @@ export const STACKS: stacksProps = {
   Github: <SiGithub size={iconSize} />,
   Git: <SiGit size={iconSize} className="text-orange-500" />,
   Nextjs: <SiNextdotjs size={iconSize} className="text-slate-800" />,
- 
 }
