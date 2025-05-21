@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "lint:fix": "eslint . --fix && yarn format",
+    "lint:fix": "eslint . --fix && npm run format",
     "format": "prettier --write .",
     "format:check": "prettier -c .",
     "test": "vitest",
