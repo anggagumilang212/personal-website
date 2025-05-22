@@ -9,7 +9,7 @@ import MeSection from '@/modules/me'
 export const metadata: Metadata = {
   title: `Hi! ${METADATA.exTitle}`,
   description: 'Programming tips for software developer',
-  keywords: 'frontend developer, software engineer, react js, javascript, typescript',
+  keywords: 'fullstack developer, software engineer, react js, javascript, typescript',
   alternates: {
     canonical: `${process.env.DOMAIN}/me`
   }
