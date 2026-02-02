@@ -12,5 +12,5 @@ export const METADATA = {
     locale: 'id-ID'
   },
   exTitle: '| Angga Gumilang',
-  profile: 'https://res.cloudinary.com/dnlrqdzbv/image/upload/v1747724447/Angga/pv4jrvnfqm2pscykowwi.jpg'
+  profile: 'https://res.cloudinary.com/dnlrqdzbv/image/upload/c_crop,ar_1:1/v1770018519/me2_yaijiu.png'
 }
