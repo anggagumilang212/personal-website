@@ -10,8 +10,9 @@ export default function CareerCard({ position, company, logo, location, start_da
   const isPresent = end_date === 'Present' || !end_date
   const endDate = isPresent ? new Date() : new Date(end_date as string)
 
-  const durationYears = differenceInYears(endDate, startDate)
-  const durationMonths = differenceInMonths(endDate, startDate) % 12
+  const totalMonths = differenceInMonths(endDate, startDate) + 1
+  const durationYears = Math.floor(totalMonths / 12)
+  const durationMonths = totalMonths % 12
 
   let durationText = ''
   if (durationYears > 0) {
