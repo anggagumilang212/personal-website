@@ -1,4 +1,15 @@
 export const CAREERS = [
+    {
+    position: 'Fullstack Programmer (IT)',
+    company: 'PT. Oka Iki Indonesia',
+    logo: 'https://res.cloudinary.com/dnlrqdzbv/image/upload/v1782349817/okaiki_jocws0.jpg',
+    location: 'Cirebon',
+    location_type: 'WFO',
+    type: 'Fulltime',
+    start_date: '2026-03',
+    end_date: 'Present',
+    link: 'https://okaiiki.com'
+  },
   {
     position: 'Full Stack Developer',
     company: 'CV. Reang Corporation',
