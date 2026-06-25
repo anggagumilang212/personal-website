@@ -7,7 +7,8 @@ import { CareerProps } from '@/common/types/careers'
 
 export default function CareerCard({ position, company, logo, location, start_date, end_date, link }: CareerProps) {
   const startDate = new Date(start_date)
-  const endDate = end_date ? new Date(end_date) : new Date()
+  const isPresent = end_date === 'Present' || !end_date
+  const endDate = isPresent ? new Date() : new Date(end_date as string)
 
   const durationYears = differenceInYears(endDate, startDate)
   const durationMonths = differenceInMonths(endDate, startDate) % 12
@@ -37,7 +38,7 @@ export default function CareerCard({ position, company, logo, location, start_da
           <div className="flex flex-col md:text-[13px]">
             <div className="flex gap-1">
               <span>{format(startDate, 'MMM yyyy')}</span> -{' '}
-              <span>{end_date ? format(endDate, 'MMM yyyy') : 'Present'}</span>
+              <span>{isPresent ? 'Present' : format(endDate, 'MMM yyyy')}</span>
             </div>
             <span className="text-neutral-500 dark:text-neutral-500">~ {durationText}</span>
           </div>
