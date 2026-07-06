@@ -17,9 +17,7 @@ export default function Introduction() {
           </li>
         </ul>
         <p className="leading-[1.8] md:leading-loose text-neutral-800 dark:text-neutral-300">
-          A full stack web developer with a passion for creating modern,
-          dynamic and static websites, creating technological
-          solutions that are innovative and useful for many people.
+          A Software Engineer focusing on Web & Mobile Development (Android & iOS with Flutter), with a passion for creating modern applications and technological solutions that are innovative and useful for many people.
         </p>
       </div>
     </section>

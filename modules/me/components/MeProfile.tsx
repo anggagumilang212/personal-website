@@ -27,7 +27,7 @@ export default function MeProfile() {
         </Tooltip>
       </div>
       <p className="leading-[1.8] md:leading-loose text-sm text-center text-neutral-800 dark:text-neutral-300">
-        Software Engineer who focus on web development.
+        Software Engineer focusing on Web & Mobile Development (Android & iOS with Flutter).
       </p>
     </div>
   )
