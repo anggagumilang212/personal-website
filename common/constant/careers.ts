@@ -1,6 +1,6 @@
 export const CAREERS = [
     {
-    position: 'Fullstack Programmer (IT)',
+    position: 'Full Stack Engineer',
     company: 'PT. Oka Iki Indonesia',
     logo: 'https://res.cloudinary.com/dnlrqdzbv/image/upload/v1782349817/okaiki_jocws0.jpg',
     location: 'Tangerang',
