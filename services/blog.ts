@@ -16,16 +16,26 @@ export async function getBlogData(): Promise<BlogItem[]> {
 
 export async function getBlogDetail({ params, searchParams }: Props): Promise<BlogDetailProps> {
   const URL = `${BLOG_API}/${params.slug}`
-  const response = await axios.get(URL)
-  const data = response.data?.data || response.data
-  if (!data.user) {
-    data.user = {
-      name: 'Angga Gumilang',
-      username: 'anggagumilang212',
-      profile_image: 'https://res.cloudinary.com/dnlrqdzbv/image/upload/c_crop,ar_1:1/v1770018519/me2_yaijiu.png'
+  try {
+    const response = await axios.get(URL)
+    const data = response.data?.data || response.data
+    if (!data.user) {
+      data.user = {
+        name: 'Angga Gumilang',
+        username: 'anggagumilang212',
+        profile_image: 'https://res.cloudinary.com/dnlrqdzbv/image/upload/c_crop,ar_1:1/v1770018519/me2_yaijiu.png'
+      }
     }
+    return data
+  } catch (error) {
+    return {
+      title: 'Not Found',
+      description: 'The requested blog post could not be found.',
+      cover_image: '',
+      slug: params.slug,
+      user: { name: 'Angga Gumilang' }
+    } as BlogDetailProps
   }
-  return data
 }
 
 export async function getComments(postId: string): Promise<CommentItemProps[]> {

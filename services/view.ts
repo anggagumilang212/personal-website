@@ -12,7 +12,8 @@ export async function getBlogViews(searchParams: string) {
   if (response.status !== 200) return 0
   const data = response.data
 
+  if (!searchParams) return 0
   const findArticle = data?.find((blog: BlogItem) => blog.id === parseInt(searchParams))
-  const page_views_count: number = findArticle?.page_views_count
+  const page_views_count: number = findArticle?.page_views_count || 0
   return page_views_count
 }
