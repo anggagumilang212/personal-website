@@ -7,7 +7,7 @@ import useSWR from 'swr'
 
 import EmptyState from '@/common/components/elements/EmptyState'
 import LoadingCard from '@/common/components/elements/LoadingCard'
-import { DEVTO_BLOG_API } from '@/common/constant'
+import { BLOG_API } from '@/common/constant'
 import { BlogItem } from '@/common/types/blog'
 
 import { useBlogView } from '@/stores/blog-view'
@@ -20,11 +20,11 @@ import BlogListHeader from './BlogListHeader'
 export default function Blog() {
   const isMobile = useIsMobile()
   const { viewOption, setViewOption } = useBlogView()
-  const { data, isLoading } = useSWR(DEVTO_BLOG_API, fetcher, {
+  const { data, isLoading } = useSWR(BLOG_API, fetcher, {
     revalidateOnMount: true
   })
 
-  const blogs: BlogItem[] = data || []
+  const blogs: BlogItem[] = (Array.isArray(data) ? data : data?.data) || []
 
   if (isLoading)
     return (
