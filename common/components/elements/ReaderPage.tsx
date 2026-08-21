@@ -2,7 +2,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import Breakline from '@/common/components/elements/Breakline'
-import CommentList from '@/common/components/elements/CommentList'
 import MDXComponent from '@/common/components/elements/MDXComponent'
 import { PLACEHOLDER_URL } from '@/common/constant'
 import { formatImageUrl } from '@/common/helpers'
@@ -57,13 +56,7 @@ export default function ReaderPage({ content, comments, pageViewCount }: ReaderP
         </div>
       )}
       <Breakline className="!my-10" />
-      <div className="flex flex-col mb-4 space-y-2">
-        <h3 className="text-lg font-medium">Comment on DEV Community:</h3>
-        <Link href={url} target="_blank" className="text-blue-600">
-          {url}
-        </Link>
-      </div>
-      <CommentList id={id} totalComments={comments_count} comments={comments} />
+
     </>
   )
 }

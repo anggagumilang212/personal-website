@@ -17,8 +17,15 @@ export async function getBlogData(): Promise<BlogItem[]> {
 export async function getBlogDetail({ searchParams }: Props): Promise<BlogDetailProps> {
   const URL = `${BLOG_API}/${searchParams.id}`
   const response = await axios.get(URL)
-  if (response.status !== 200) return {} as BlogDetailProps
-  return response.data
+  const data = response.data?.data || response.data
+  if (!data.user) {
+    data.user = {
+      name: 'Angga Gumilang',
+      username: 'anggagumilang212',
+      profile_image: 'https://res.cloudinary.com/dnlrqdzbv/image/upload/c_crop,ar_1:1/v1770018519/me2_yaijiu.png'
+    }
+  }
+  return data
 }
 
 export async function getComments(postId: string): Promise<CommentItemProps[]> {

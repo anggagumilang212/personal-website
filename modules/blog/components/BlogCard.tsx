@@ -1,7 +1,6 @@
 import Link from 'next/link'
 
 import { useEffect, useState } from 'react'
-import { TbMessage2 as CommentIcon } from 'react-icons/tb'
 
 import Card from '@/common/components/elements/Card'
 import Image from '@/common/components/elements/Image'
@@ -81,15 +80,6 @@ export default function BlogCard({
               <ViewIcon size={14} />
               <span className="text-xs ml-0.5">{page_views_count} Views</span>
             </div> */}
-            <div className="flex gap-1 items-center">
-              <CommentIcon size={16} />
-              <span className="text-xs">
-                <div className="flex gap-1">
-                  <span>{comments_count}</span>
-                  <span className="hidden lg:block">Comment{comments_count > 1 && 's'}</span>
-                </div>
-              </span>
-            </div>
           </div>
           {isExcerpt && (
             <p className="hidden sm:block leading-relaxed text-sm text-neutral-600 dark:text-neutral-400">
