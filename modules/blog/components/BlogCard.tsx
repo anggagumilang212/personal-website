@@ -33,7 +33,7 @@ export default function BlogCard({
   const [viewOption, setViewOption] = useState<string>()
   const isMobile = useIsMobile()
 
-  const newSlug = formatBlogSlug(slug)
+  const newSlug = slug
 
   const trimmedTitle = viewOption === 'grid' ? title.slice(0, 70) + (title.length > 70 ? '...' : '') : title
   const trimmedContent = description.slice(0, 100) + (description.length > 100 ? '...' : '')
