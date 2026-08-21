@@ -4,7 +4,7 @@ import { BLOG_API, DEVTO_BLOG_API } from '@/common/constant'
 import { BlogDetailProps, BlogItem, CommentItemProps } from '@/common/types/blog'
 
 type Props = {
-  params: { content: string }
+  params: { slug: string }
   searchParams: { [key: string]: string | string[] | undefined }
 }
 
@@ -14,8 +14,8 @@ export async function getBlogData(): Promise<BlogItem[]> {
   return response.data
 }
 
-export async function getBlogDetail({ searchParams }: Props): Promise<BlogDetailProps> {
-  const URL = `${BLOG_API}/${searchParams.id}`
+export async function getBlogDetail({ params, searchParams }: Props): Promise<BlogDetailProps> {
+  const URL = `${BLOG_API}/${params.slug}`
   const response = await axios.get(URL)
   const data = response.data?.data || response.data
   if (!data.user) {

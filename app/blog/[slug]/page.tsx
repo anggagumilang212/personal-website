@@ -11,7 +11,7 @@ import { METADATA } from '@/common/constant/metadata'
 import { formatImageUrl } from '@/common/helpers'
 
 type Props = {
-  params: { content: string }
+  params: { slug: string }
   searchParams: { [key: string]: string | string[] | undefined }
 }
 
