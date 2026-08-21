@@ -1,26 +1,37 @@
 import { NextResponse } from 'next/server'
+import { Resend } from 'resend'
 
-import { sendMessage } from '@/services/email'
+const resend = new Resend(process.env.RESEND_API_KEY)
 
 interface IEmailForm {
-  [key: string]: string
+  name: string
+  email: string
+  message: string
 }
 
 export const POST = async (request: Request) => {
-  const NEXT_PUBLIC_EMAIL_SERVICE_API = process.env.NEXT_PUBLIC_EMAIL_SERVICE_API || ''
-  const body: IEmailForm = await request.json()
-
-  const newFormBody = new FormData()
-  newFormBody.append('access_key', NEXT_PUBLIC_EMAIL_SERVICE_API)
-
-  for (const key in body) {
-    newFormBody.append(key, body[key])
-  }
-
   try {
-    const response = await sendMessage(newFormBody)
-    return NextResponse.json({ status: true, data: response.data }, { status: 200 })
+    const body: IEmailForm = await request.json()
+    const { name, email, message } = body
+
+    if (!name || !email || !message) {
+      return NextResponse.json({ status: false, error: 'Missing required fields' }, { status: 400 })
+    }
+
+    const { data, error } = await resend.emails.send({
+      from: 'Contact Form <contact@anggagumilang.my.id>', // Using the domain from screenshot
+      to: process.env.RESEND_TO_EMAIL || 'anggagumilang212@gmail.com', // Target email
+      subject: `New message from ${name}`,
+      replyTo: email,
+      text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
+    })
+
+    if (error) {
+      return NextResponse.json({ status: false, error }, { status: 400 })
+    }
+
+    return NextResponse.json({ status: true, data }, { status: 200 })
   } catch (error) {
-    return NextResponse.json({ status: false, error }, { status: 400 })
+    return NextResponse.json({ status: false, error }, { status: 500 })
   }
 }

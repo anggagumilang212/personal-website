@@ -1,12 +1,12 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import { HiOutlineNewspaper } from 'react-icons/hi'
 import SectionHeading from '@/common/components/elements/SectionHeading'
 import SectionSubHeading from '@/common/components/elements/SectionSubHeading'
 import Image from 'next/image'
 import Link from 'next/link'
-import { FiExternalLink as LinkIcon } from 'react-icons/fi'
+import { FiExternalLink as LinkIcon, FiChevronLeft, FiChevronRight } from 'react-icons/fi'
 interface Project {
   id: number
   judul: string
@@ -17,6 +17,7 @@ interface Project {
 }
 export default function LatestArticle() {
   const [projects, setProjects] = useState<Project[]>([])
+  const scrollContainerRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const fetchProjects = async () => {
@@ -32,15 +33,48 @@ export default function LatestArticle() {
     fetchProjects()
   }, [])
 
+  const scrollLeft = () => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollBy({ left: -262, behavior: 'smooth' })
+    }
+  }
+
+  const scrollRight = () => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollBy({ left: 262, behavior: 'smooth' })
+    }
+  }
+
   return (
     <section>
-      <div className="space-y-2">
-        <SectionHeading title="Latest Project" icon={<HiOutlineNewspaper className="mr-1" />} />
-        <SectionSubHeading>
-          <p className="dark:text-neutral-400">Latest portfolio project.</p>
-        </SectionSubHeading>
+      <div className="flex items-end justify-between">
+        <div className="space-y-2">
+          <SectionHeading title="Latest Project" icon={<HiOutlineNewspaper className="mr-1" />} />
+          <SectionSubHeading>
+            <p className="dark:text-neutral-400">Latest portfolio project.</p>
+          </SectionSubHeading>
+        </div>
+        <div className="flex items-center gap-2 mb-2">
+          <button
+            onClick={scrollLeft}
+            className="p-2 rounded-full bg-neutral-200 dark:bg-neutral-800 hover:bg-neutral-300 dark:hover:bg-neutral-700 transition-colors"
+            aria-label="Scroll Left"
+          >
+            <FiChevronLeft className="text-neutral-600 dark:text-neutral-300" size={16} />
+          </button>
+          <button
+            onClick={scrollRight}
+            className="p-2 rounded-full bg-neutral-200 dark:bg-neutral-800 hover:bg-neutral-300 dark:hover:bg-neutral-700 transition-colors"
+            aria-label="Scroll Right"
+          >
+            <FiChevronRight className="text-neutral-600 dark:text-neutral-300" size={16} />
+          </button>
+        </div>
       </div>
-      <div className="flex flex-row h-40 overflow-y-hidden space-x-3 mt-6 overflow-x-scroll no-scrollbar">
+      <div 
+        ref={scrollContainerRef}
+        className="flex flex-row h-40 overflow-y-hidden space-x-3 mt-6 overflow-x-scroll no-scrollbar"
+      >
         {projects.map((project, index) => (
           <div
             key={index}

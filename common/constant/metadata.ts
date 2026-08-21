@@ -1,7 +1,7 @@
 export const METADATA = {
   creator: 'Angga Gumilang',
-  description: 'Personal website, portfolio, blog, software engineer roadmap, programming tips of Angga',
-  keyword: 'angga gumilang, Angga Gumilang, programming tips, belajar laravel, belajar javascript',
+  description: 'Software Engineer, Mobile and Web Development (Android & iOS with Flutter) with a passion for creating modern applications and technological solutions that are innovative and useful for many people.',
+  keyword: 'angga gumilang, Angga Gumilang, Software Engineer, Mobile and Web Development, Android, iOS, Flutter, programming tips, belajar laravel, belajar javascript',
   authors: {
     name: 'Angga Gumilang',
     url: process.env.DOMAIN
