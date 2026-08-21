@@ -24,7 +24,7 @@ export default function Blog() {
     revalidateOnMount: true
   })
 
-  const blogs: BlogItem[] = data?.filter((blog: BlogItem) => blog.collection_id === null)
+  const blogs: BlogItem[] = data || []
 
   if (isLoading)
     return (
