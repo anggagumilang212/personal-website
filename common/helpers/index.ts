@@ -16,6 +16,6 @@ export const formatDate = (date: string, type = 'MMMM dd, yyyy') => {
 export const formatImageUrl = (url: string | null) => {
   if (!url) return ''
   if (url.startsWith('http')) return url
-  // Assuming Laravel stores images in storage/app/public and they are accessible via /storage/
-  return `https://api.anggagumilang.my.id/storage/${url}`
+  // Assuming Laravel stores images in public/cover_images/
+  return `https://api.anggagumilang.my.id/cover_images/${url}`
 }
