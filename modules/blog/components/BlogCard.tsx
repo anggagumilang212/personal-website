@@ -6,7 +6,7 @@ import { TbMessage2 as CommentIcon } from 'react-icons/tb'
 import Card from '@/common/components/elements/Card'
 import Image from '@/common/components/elements/Image'
 import { PLACEHOLDER_URL } from '@/common/constant'
-import { formatBlogSlug, formatDate } from '@/common/helpers'
+import { formatImageUrl, formatDate } from '@/common/helpers'
 import clsxm from '@/common/libs/clsxm'
 import { BlogItem } from '@/common/types/blog'
 
@@ -59,7 +59,7 @@ export default function BlogCard({
       >
         <div className="w-fit">
           <Image
-            src={cover_image || PLACEHOLDER_URL}
+            src={formatImageUrl(cover_image) || PLACEHOLDER_URL}
             width={isMobile || viewOption === 'grid' ? 400 : 240}
             height={100}
             alt={title}

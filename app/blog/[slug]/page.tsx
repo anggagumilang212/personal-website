@@ -2,11 +2,13 @@ import { Metadata } from 'next'
 
 import { getBlogDetail, getComments } from '@/services/blog'
 import { getBlogViews } from '@/services/view'
+import { PLACEHOLDER_URL } from '@/common/constant'
 
 import BackButton from '@/common/components/elements/BackButton'
 import Container from '@/common/components/elements/Container'
 import ReaderPage from '@/common/components/elements/ReaderPage'
 import { METADATA } from '@/common/constant/metadata'
+import { formatImageUrl } from '@/common/helpers'
 
 type Props = {
   params: { content: string }
@@ -19,7 +21,7 @@ export async function generateMetadata({ params, searchParams }: Props): Promise
     title: `${blog.title} ${METADATA.exTitle}`,
     description: blog.description,
     openGraph: {
-      images: blog.cover_image,
+      images: formatImageUrl(blog.cover_image) || PLACEHOLDER_URL,
       url: `${process.env.DOMAIN}/${blog.slug}`,
       siteName: METADATA.openGraph.siteName,
       locale: METADATA.openGraph.locale,

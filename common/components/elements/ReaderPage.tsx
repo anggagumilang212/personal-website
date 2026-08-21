@@ -5,6 +5,7 @@ import Breakline from '@/common/components/elements/Breakline'
 import CommentList from '@/common/components/elements/CommentList'
 import MDXComponent from '@/common/components/elements/MDXComponent'
 import { PLACEHOLDER_URL } from '@/common/constant'
+import { formatImageUrl } from '@/common/helpers'
 import { BlogDetailProps, CommentItemProps } from '@/common/types/blog'
 
 import ReaderHeader from './ReaderHeader'
@@ -30,7 +31,7 @@ export default function ReaderPage({ content, comments, pageViewCount }: ReaderP
       <div className="space-y-6 leading-[1.8] dark:text-neutral-300 ">
         <div className="overflow-hidden">
           <Image
-            src={cover_image || PLACEHOLDER_URL}
+            src={formatImageUrl(cover_image) || PLACEHOLDER_URL}
             width={800}
             height={500}
             alt={title}
