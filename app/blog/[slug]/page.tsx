@@ -16,20 +16,39 @@ type Props = {
 
 export async function generateMetadata({ params, searchParams }: Props): Promise<Metadata> {
   const blog = await getBlogDetail({ params, searchParams })
+  const url = `${process.env.DOMAIN}/blog/${blog.slug}`
+  const imageUrl = formatImageUrl(blog.cover_image) || PLACEHOLDER_URL
+  const title = `${blog.title} ${METADATA.exTitle}`
+
   return {
-    title: `${blog.title} ${METADATA.exTitle}`,
+    title: title,
     description: blog.description,
     openGraph: {
-      images: formatImageUrl(blog.cover_image) || PLACEHOLDER_URL,
-      url: `${process.env.DOMAIN}/${blog.slug}`,
+      title: title,
+      description: blog.description,
+      images: [
+        {
+          url: imageUrl,
+          width: 1200,
+          height: 630,
+          alt: blog.title
+        }
+      ],
+      url: url,
       siteName: METADATA.openGraph.siteName,
       locale: METADATA.openGraph.locale,
       type: 'article',
       authors: blog.user.name
     },
+    twitter: {
+      card: 'summary_large_image',
+      title: title,
+      description: blog.description,
+      images: [imageUrl]
+    },
     keywords: blog.title,
     alternates: {
-      canonical: `${process.env.DOMAIN}/${blog.slug}`
+      canonical: url
     }
   }
 }

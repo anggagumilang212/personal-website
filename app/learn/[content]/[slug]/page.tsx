@@ -8,6 +8,8 @@ import BackButton from '@/common/components/elements/BackButton'
 import Container from '@/common/components/elements/Container'
 import ReaderPage from '@/common/components/elements/ReaderPage'
 import { METADATA } from '@/common/constant/metadata'
+import { formatImageUrl } from '@/common/helpers'
+import { PLACEHOLDER_URL } from '@/common/constant'
 
 interface Params {
   content: string
@@ -21,18 +23,39 @@ interface LearnContentDetailPageProps {
 
 export async function generateMetadata({ params, searchParams }: LearnContentDetailPageProps): Promise<Metadata> {
   const data = await getBlogDetail({ params, searchParams })
+  const url = `${process.env.DOMAIN}/learn/${params.content}/${params.slug}`
+  const imageUrl = formatImageUrl(data.cover_image) || PLACEHOLDER_URL
+  const title = `${data.title} ${METADATA.exTitle}`
+
   return {
-    title: `${data.title} ${METADATA.exTitle}`,
+    title: title,
+    description: data.description,
     openGraph: {
-      url: METADATA.openGraph.url,
+      title: title,
+      description: data.description,
+      images: [
+        {
+          url: imageUrl,
+          width: 1200,
+          height: 630,
+          alt: data.title
+        }
+      ],
+      url: url,
       siteName: METADATA.openGraph.siteName,
       locale: METADATA.openGraph.locale,
       type: 'article',
       authors: METADATA.creator
     },
+    twitter: {
+      card: 'summary_large_image',
+      title: title,
+      description: data.description,
+      images: [imageUrl]
+    },
     keywords: data.title,
     alternates: {
-      canonical: `${process.env.DOMAIN}/learn/${params.content}/${params.slug}`
+      canonical: url
     }
   }
 }
