@@ -1,4 +1,3 @@
-import { BiLogoPostgresql } from 'react-icons/bi'
 import { BsFillBootstrapFill } from 'react-icons/bs'
 import {
   SiLaravel,
@@ -14,7 +13,9 @@ import {
   SiVite,
   SiGit,
   SiProxmox,
-
+  SiFlutter,
+  SiGoogleplay,
+  SiAppstore,
 } from 'react-icons/si'
 
 type stacksProps = {
@@ -39,4 +40,7 @@ export const STACKS: stacksProps = {
   Github: <SiGithub size={iconSize} />,
   Git: <SiGit size={iconSize} className="text-orange-500" />,
   Nextjs: <SiNextdotjs size={iconSize} className="text-slate-800" />,
+  Flutter: <SiFlutter size={iconSize} className="text-cyan-400" />,
+  'Playstore Deploy': <SiGoogleplay size={iconSize} className="text-green-500" />,
+  'Appstore Deploy': <SiAppstore size={iconSize} className="text-blue-500" />,
 }
