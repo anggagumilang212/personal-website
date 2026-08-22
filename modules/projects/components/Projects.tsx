@@ -45,7 +45,6 @@ export default function Projects() {
             'gap-5 sm:gap-4',
             viewOption === 'list' || isMobile ? 'flex flex-col' : 'grid grid-cols-1 sm:grid-cols-2 sm:!gap-5'
           )} 
-          data-aos="fade-up"
         >
           {projects.map((project, index) => (
             <div key={index} className="w-full">
